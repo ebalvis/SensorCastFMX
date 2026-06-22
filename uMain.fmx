@@ -1,0 +1,84 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'SensorCast'
+  ClientHeight = 640
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object rectTop: TRectangle
+    Align = Top
+    Fill.Color = xFF14181C
+    Size.Width = 360.000000000000000000
+    Size.Height = 150.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object lblIP: TLabel
+      StyledSettings = [Family, Size, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'IP: ...'
+    end
+    object lblStatus: TLabel
+      StyledSettings = [Family, Size, Style, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claSilver
+      Text = 'Arrastra para rotar '#194#183' rueda: zoom'
+    end
+    object lblAcc: TLabel
+      StyledSettings = [Family, Size, Style, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claOrange
+      Text = 'Acc'
+    end
+    object lblMag: TLabel
+      StyledSettings = [Family, Size, Style, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 78.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claFuchsia
+      Text = 'Mag'
+    end
+    object lblGyro: TLabel
+      StyledSettings = [Family, Size, Style, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claYellow
+      Text = 'Gyro (anillo)'
+    end
+    object lblAxes: TLabel
+      StyledSettings = [Family, Style, Other]
+      Position.X = 10.000000000000000000
+      Position.Y = 124.000000000000000000
+      Size.Width = 340.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claSilver
+      Text = 'Ejes: X rojo '#194#183' Y verde '#194#183' Z azul'
+    end
+  end
+end
